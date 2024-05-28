@@ -1,1 +1,1 @@
-web: gunicorn per_assist.wsgi
+web: py per_assist/manage.py runserver 0.0.0.0:8000

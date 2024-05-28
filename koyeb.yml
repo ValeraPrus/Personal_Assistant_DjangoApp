@@ -1,0 +1,18 @@
+app: per_assist
+services:
+  - name: per_assist
+    routes:
+      - path: /
+    ports:
+      - port: 80
+        virtual_port: 80
+    environment:
+      - name: DJANGO_SETTINGS_MODULE
+        value: per_assist.settings
+    checks:
+      http:
+        path: /
+    instance_type: basic.small
+    git:
+      repo: https://github.com/ValeraPrus/per_assist
+      branch: main

@@ -1,1 +1,1 @@
-web: export DJANGO_SETTINGS_MODULE=per_assist.per_assst.settings && gunicorn per_assst.wsgi --log-file -
+web: gunicorn per_assist.per_assist.wsgi --log-file -

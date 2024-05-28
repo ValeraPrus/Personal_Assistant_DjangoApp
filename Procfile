@@ -1,1 +1,1 @@
-web: export DJANGO_SETTINGS_MODULE=my_django_project.my_django_project.settings && gunicorn my_django_project.my_django_project.wsgi --log-file -
+web: export DJANGO_SETTINGS_MODULE=per_assist.per_assst.settings && gunicorn per_assist.per_assst.wsgi --log-file -
